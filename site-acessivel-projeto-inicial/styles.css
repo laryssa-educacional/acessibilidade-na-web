@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --vermelho: #e60000;
+    --preto: #111111;
+    --cinza: #2c2c2c;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--preto);
+    color: #fff;
+}
+
+header {
+    background-color: var(--cinza);
+}
+
+/* ===== Ajustes da logo ===== */
+.nav-img {
+    max-width: 180px;
+    height: auto;
+}
+
+.logo-secundaria {
+    max-width: 400px;
+    height: auto;
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.nav-link {
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    background-image: url('img/ultraje-show.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.botao-inicio {
+    background-color: var(--vermelho);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+.display-4 {
+    text-shadow: -3px 3px var(--vermelho);
+}
+
+#ultraje {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/guitarra.png') top right no-repeat,
+                url('img/palco.png') bottom left no-repeat;
+    background-size: 200px 200px;
+}
+
+#ultraje .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    color: var(--vermelho);
+}
+
+#galeria {
+    background-color: var(--cinza);
+}
+
+.fundo-galeria {
+    background: url('img/baixo.png') bottom right no-repeat;
+    background-size: 200px 200px;
+}
+
+#contato {
+    background-image: url('img/ultraje-publico.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: #ffffff;
+    color: var(--preto);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--vermelho);
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.form-control {
+    background-color: #eeeeee;
+}
+
+/* ===== Menu de acessibilidade ===== */
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
+.opcoes-acessibilidade {
+    display: none;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade.apresenta-lista {
+    display: flex;
+}
